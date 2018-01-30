@@ -581,15 +581,23 @@ end
 puts generator
 
 puts "Do you want to save this character (yes or no)?"
-yes_no = gets.chomp
+save_yn = gets.chomp      #save_yn står för "save: yes or no"
 
-def save(yes_no)
-    Dir.chdir("characters")
-    if yes_no == "yes"
+def save(save_yn)
+
+    if save_yn == "yes"
+
+        if Dir.exists?("characters") != true
+            Dir.mkdir "characters"
+        end
+
+        Dir.chdir("characters")
+
         puts "Name your new character"
         name = gets.chomp
-        File.open "#{name}.txt", "w"
         File.write("#{name}.txt", $character)
     end
+
 end
-puts save(yes_no)
+
+puts save(save_yn)

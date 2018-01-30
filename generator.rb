@@ -572,10 +572,24 @@ def generator
         end
     end
 
-    character = "\n " + race + "\n " + clas + subclass + "\n " + 
+    $character = "\n " + race + "\n " + clas + subclass + "\n " + 
     background + "\n   " + str + "\n   " + dex + "\n   " + 
     con + "\n   " + int + "\n   " + wis + "\n   " + cha + extra
-    return character
+    return $character
 end
 
 puts generator
+
+puts "Do you want to save this character (yes or no)?"
+yes_no = gets.chomp
+
+def save(yes_no)
+    Dir.chdir("characters")
+    if yes_no == "yes"
+        puts "Name your new character"
+        name = gets.chomp
+        File.open "#{name}.txt", "w"
+        File.write("#{name}.txt", $character)
+    end
+end
+puts save(yes_no)

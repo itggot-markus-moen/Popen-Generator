@@ -572,13 +572,9 @@ def generator
         end
     end
 
-    character = "\n " + race + "\n " + clas + subclass + "\n " + background + "
-    " + str + "
-    " + dex + "
-    " + con + "
-    " + int + "
-    " + wis + "
-    " + cha + extra
+    character = "\n " + race + "\n " + clas + subclass + "\n " + 
+    background + "\n   " + str + "\n   " + dex + "\n   " + 
+    con + "\n   " + int + "\n   " + wis + "\n   " + cha + extra
     return character
 end
 

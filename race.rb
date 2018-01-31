@@ -17,4 +17,4 @@ return race
 end
 
 puts races()
-puts $racetype
+#puts $racetype

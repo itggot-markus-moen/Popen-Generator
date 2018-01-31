@@ -8,7 +8,7 @@ def races()
     race = racelist[racenum]
     $racetype = "standard"
 
-    if  (racelist[racenum])[1].length > 1                    #racenum > 15    sparar denna för säkerhets slull...
+    if  (racelist[racenum])[1].length > 1                    
         race = race[rand(race.length)]
         $racetype = "sub"
     end
@@ -17,4 +17,3 @@ return race
 end
 
 puts races()
-puts $racetype

@@ -1,0 +1,3 @@
+def equipment()
+    eqiplist
+end

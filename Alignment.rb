@@ -1,3 +1,5 @@
+require_relative "race.rb"
+
 def alignments(race)
     base = rand(9)+1
     personality = rand(9)+1
@@ -124,3 +126,7 @@ def alignments(race)
         return alignment
     end
 end
+
+
+
+puts alignments(races)

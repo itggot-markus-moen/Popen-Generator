@@ -12,10 +12,10 @@ def classes()
     ["Rogue", "Arcane Trickster", "Assassin", "Inquisitive", "Mastermind", "Scout", "Swashbuckler", "Thief"], 
     ["Sorcerer", "Divine Soul", "Draconic Ancestry", "Shadow Magic", "Storm Sorcery", "Wild Magic"], 
     ["Warlock", "The Archfey", "The Celestial", "The Fiend", "The Great Old One", "The Hexblade"], 
-    ["Wizard", "School of Abjuration", "School of Conjuration", "School of Divination", "School of Enchantment", "School of Evocation", "School of Illusion", "School of Necromancy", "School of Transmutation", "War Magic"]]
+    ["Wizard", "School of Abjuration", "School of Conjuration", "School of Divination", "School of Enchantment", "School of Evocation", "School of Illusion", "School of Necromancy", "School of Transmutation", "War Magic"], 
+    ["God", "of SOME MOTHA FUCKING DRAGONS!!!", "aka Popen"]]
 
     classnum = rand(classlist.length)
-
     clas = (classlist[classnum])[0]
     subclas = (classlist[classnum])[rand((classlist[classnum]).length - 1) + 1]
 

@@ -1,3 +1,5 @@
+require_relative "race.rb"
+
 def classes()
     classlist = [["Artificer", "Alchemist", "Gunsmith"], 
     ["Barbarian", "Path of the Ancestral Guardian", "Path of the Berserker", "Path of the Storm Herald", "Path of the Totem Warrior", "Path of the Zealot"], 
@@ -13,7 +15,7 @@ def classes()
     ["Sorcerer", "Divine Soul", "Draconic Ancestry", "Shadow Magic", "Storm Sorcery", "Wild Magic"], 
     ["Warlock", "The Archfey", "The Celestial", "The Fiend", "The Great Old One", "The Hexblade"], 
     ["Wizard", "School of Abjuration", "School of Conjuration", "School of Divination", "School of Enchantment", "School of Evocation", "School of Illusion", "School of Necromancy", "School of Transmutation", "War Magic"], 
-    ["God", "of SOME MOTHA FUCKING DRAGONS!!!", "aka Popen"]]
+    ["God", "of SOME MOTHA FUCKING DRAGONS!!!"]]
 
     classnum = rand(classlist.length)
     clas = (classlist[classnum])[0]

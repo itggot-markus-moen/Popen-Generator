@@ -1,5 +1,5 @@
 def sex()
-    sexnum = rand(100)+1
+    sexnum = rand(1000)+1
     if sexnum > 2
         sex = (["Male", "Female"])[rand(2)]
     else

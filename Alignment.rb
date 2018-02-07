@@ -106,17 +106,17 @@ def alignments(race)
 
     if personality < 4
         alignment += "Chaotic"
-    elsif personality > 3 && personality < 7
+    elsif (personality > 3) and (personality < 7)
         alignment += "Neutral"
-    else
+    elsif personality > 6
         alignment += "Lawful"
     end
     
     if base < 4
         alignment += " Evil"
-    elsif 3 < base && base < 7
+    elsif (3 < base) and (base < 7)
         alignment += " Neutral"
-    else
+    elsif base > 6
         alignment += " Good"
     end
 

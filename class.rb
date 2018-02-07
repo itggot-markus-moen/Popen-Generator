@@ -1,4 +1,4 @@
-require_relative "race.rb"
+#require_relative "race.rb"
 
 def classes()
     classlist = [["Artificer", "Alchemist", "Gunsmith"], 
@@ -24,7 +24,7 @@ def classes()
         return subclas
     end
 
-    return clas + ", " + subclas
+    return subclas + " " + clas
 end
 
 puts classes

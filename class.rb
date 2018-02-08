@@ -25,8 +25,12 @@ def classes()
         return subclas
     end
 
+<<<<<<< HEAD
 
     return clas + ", " + subclas
+=======
+    return subclas + " " + clas
+>>>>>>> 46c40a7eaf5f233a682e21252e078722dfbdee33
 end
 
 puts classes

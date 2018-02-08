@@ -5,7 +5,7 @@ def sex()
     else
         sex = (["Transman", "Transwoman"])[rand(2)]
     end
-
+    
     return sex
 end
 

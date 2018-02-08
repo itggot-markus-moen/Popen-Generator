@@ -1,3 +1,3 @@
 def equipment()
-    eqiplist
+    eqiplist "all of the stuffs"
 end

@@ -16,16 +16,21 @@ def classes()
     ["Warlock", "The Archfey", "The Celestial", "The Fiend", "The Great Old One", "The Hexblade"], 
     ["Wizard", "School of Abjuration", "School of Conjuration", "School of Divination", "School of Enchantment", "School of Evocation", "School of Illusion", "School of Necromancy", "School of Transmutation", "War Magic"]]
 
-    classnum = rand(classlist.length)
-    clas = (classlist[classnum])[0]
-    subclas = (classlist[classnum])[rand((classlist[classnum]).length - 1) + 1]
+    $classnum = rand(classlist.length)
+    clas = (classlist[$classnum])[0]
+    $subclassnum = rand((classlist[$classnum]).length - 1) + 1
+    subclas = (classlist[$classnum])[$subclassnum]
 
     if subclas == (classlist[3])[10]
         return subclas
     end
 
+<<<<<<< HEAD
 
     return clas + ", " + subclas
+=======
+    return subclas + " " + clas
+>>>>>>> 87d57dff374ac589ca04e5d95cc111f06588f8c6
 end
 
 puts classes

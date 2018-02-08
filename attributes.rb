@@ -20,9 +20,6 @@ end
 
 def attributes(racenum, subracenum)
 
-    $racenum = racenum
-    $subracenum = subracenum
-
     str = stats()
     dex = stats()
     con = stats()

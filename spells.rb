@@ -5,7 +5,6 @@ cleric_spells = ["Bane", "Bless", "Command", "Create or Destroy Water", "Cure Wo
 druid_cantrips = ["Druidcraft", "Guidance", "Mending", "Poison Spray", "Produce Flame", "Resistance", "Shillealgh", "Thorn Whip"]
 druid_spells = ["Animal Friendship", "Charm Person", "Create or Destroy Water", "Cure Wounds", "Detect Magic", "Detect Poison and Disease", "Entangle", "Fearie Fire", "Fog Cloud", "Goodberry", "Healing Word", "Jump", "Longstrider", "purify Food and Drink", "Speak to Animals", "Thunderwave"]
 sorcerer_cantrips = ["Acid Splash", "Blade Ward", "Chill Touch", "Dancing Lights", "Fire Bolt", "Friends", "light", "Mage Hand", "Mending", "Message", "Minor Illusion", "Poison Spray", "Prestidigitation", "Ray of Frost", "Shocking Grasp", "True Strike"]
-mystic_cantrips = []
 sorcerer_spells = ["Burning Hands", "Charm Person", "Chromatic Orb", "Color Spray", "Comprehend Languages", "Detect Magic", "Disguise Self", "Expeditious Retreat", "False Life", "Feather Fall", "Fog Cloud", "Jump", "Mage Armor", "Magic Missile", "Ray of Sickness", "Shield", "Silent Image", "Sleep", "Thunderwave", "Witch Bolt"]
 warlock_cantrips = ["Blade Ward", "Chill Touch", "Eldritch Blast", "Friends", "Mage Hand", "Minor Illusion", "Poison Spray", "Prestidigitation", "True Strike"]
 warlock_spells = ["Armor of Agathys", "Arms of Hadar", "Charm Person", "Comprehend Languages", "Expeditious Retreat", "Hellish Rebuke", "Hex", "Illusory Script", "Protection from Good and Evil", "Unseen Servant", "Witch Bolt"]
@@ -39,19 +38,18 @@ def spell_select(clas)
     spellbook_spells = []
     i = clas[0][-1]
     while i > 0
-        spellbook_cantrips.insert(1, clas[0]rand(clas[0].length()-1))
+        spellbook_cantrips.insert(1, clas[0].rand(clas[0].length()-1))
         i -= 1
     end
 
     i = clas[-1][-1]
     while i > 0
-        spellbook_spells.insert(1, clas[rand(clas.length()-1)])
+        spellbook_cantrips.insert(1, clas[1].rand(clas[1].length()-1))
         i -= 1
     end
 
-return spellbook_cantrips, #spellbook_spells
+    return spellbook_cantrips, #spellbook_spells
+
 end
 
-puts spell_select(clas)
-
-clas[0]
+puts spell_select(clas) end

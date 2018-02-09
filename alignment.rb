@@ -129,4 +129,4 @@ end
 
 
 
-puts alignments(races)
+#puts alignments(races)

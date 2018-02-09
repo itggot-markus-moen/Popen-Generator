@@ -385,8 +385,8 @@ def equipment(clas, background)
     return equiplist
 end
 
-myclass = classes()
-mybackground = background()
-p myclass
-p mybackground
-p equipment(myclass, mybackground)
+#myclass = classes()
+#mybackground = background()
+#p myclass
+#p mybackground
+#p equipment(myclass, mybackground)

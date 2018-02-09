@@ -7,4 +7,4 @@ def background()
     return background
 end
 
-puts background
+#puts background

@@ -377,6 +377,9 @@ def equipment(clas, background)
 
     elsif background == "Urchin"
         equiplist << "Small knife, Map of home town, Pet mouse, Token of parents, Common clothes, Belt pouch containing 10 gp"
+
+    else
+        return "Something's wrong with the backgrounds"
     end
 
     return equiplist

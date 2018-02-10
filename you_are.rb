@@ -9,6 +9,12 @@ require_relative "spells.rb"
 
 def you_are()#alignment, attributes, background, class, equipment, race, sex, spells)
     race = races()
-    clas = classes()
-    return alignments(race)
+    clasarr = classes()
+    clas = clasarr[1]
+    subclas = clasarr[0]
+    back = background()
+    #Påminnelse till Markus: fixa attributes
+    return alignments(race), sex(), race, subclas + " " + clas, back, attributes(21, 0), equipment(clasarr, back)#, spell_select(clas)
 end
+
+puts you_are

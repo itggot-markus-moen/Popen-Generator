@@ -406,4 +406,4 @@ def attributes(racenum, subracenum)
     return str, dex, con, int, wis, cha, extra
 end
 
-puts attributes($racenum, $subracenum)
+#puts attributes($racenum, $subracenum)

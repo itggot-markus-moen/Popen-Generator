@@ -12,7 +12,7 @@ wizard_cantrips = ["Acid Splash", "Blade Ward", "Chill Touch", "Dancing Lights",
 wizard_spells = ["Alarm", "Burning Hands", "Charm Person", "Chromatic Orb", "Color Spray", "Comprehend Languages", "Detect Life", "Disguise Self", "Expeditious Retreat", "False Life", "Feather Fall", "Find Familiar", "Fog Cloud", "Grease", "Identify", "Illusory Script", "Jump", "Longstrider", "Mage Armor", "Magic Missile", "Protection from Evil and Good", "Ray of Sickness", "shield", "Silent Image", "Sleep", "Tasha's Hideous Laughter", "Tenser's Floating Disk", "Thunderwave", "Unseen Servant", "Witch Bolt", 5]
 
 
-$classnum = 2    #rand(13)
+$classnum = 2    #rand(14)
 
 artificier = ["No spells lvl 1"]
 barbarian = ["No spells lvl 1"]
@@ -38,7 +38,7 @@ def spell_select(clas)
     i = clas[0][-1]
     list = clas[0]
     while i > 0
-        spell = (list)[rand(list.length) - 1]
+        spell = (list)[rand(list.length - 1)]
         spellbook_cantrips.insert(1, spell)
         i -= 1
     end
@@ -50,7 +50,7 @@ def spell_select(clas)
     list = clas[1]
     i = clas[-1][-1]
     while i > 0
-        spell = (list)[rand(list.length) - 1]
+        spell = (list)[rand(list.length - 1)]
         spellbook_spells.insert(1, spell)
         i -= 1
     end
@@ -65,4 +65,4 @@ def spell_select(clas)
 
 end
 
-#spell_select(clas)
+spell_select(clas)

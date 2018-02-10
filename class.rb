@@ -25,7 +25,7 @@ def classes()
         return subclas
     end
 
-    return subclas + " " + clas
+    return [subclas, clas]#subclas + " " + clas
 end
 
 #puts classes

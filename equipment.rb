@@ -33,7 +33,7 @@ end
 def equipment(clas, background)
     equiplist = []
     equiplist << "CLASS EQUIPMENT:"
-    if (clas == "Alchemist Artificer") or (clas == "Gunsmith Artificer") #Class specific equipment
+    if (clas[1] == "Artificer") #["Alchemist", "Artificer"]) or (clas == ["Gunsmith", "Artificer"]) #Class specific equipment
         if rand(2) == 1
             equiplist << "Handaxe"
             equiplist << "Ligth Hammer"
@@ -48,13 +48,13 @@ def equipment(clas, background)
         else
             equiplist << "Scale mail"
         end
-        if clas == "Alchemist Artificer"
+        if clas == ["Alchemist", "Artificer"]
             equiplist << "Alchemist's Satchel"
         else
             equiplist << "Thunder Cannon"
         end
 
-    elsif (clas == "Path of the Ancestral Guardian Barbarian") or (clas == "Path of the Berserker Barbarian") or (clas == "Path of the Storm Herald Barbarian") or (clas == "Path of the Totem Warrior Barbarian") or (clas == "Path of the Zealot Barbarian")
+    elsif (clas[1] == "Barbarian") #["Path of the Ancestral Guardian", "Barbarian"]) or (clas == ["Path of the Berserker", "Barbarian"]) or (clas == ["Path of the Storm Herald", "Barbarian"]) or (clas == ["Path of the Totem Warrior", "Barbarian"]) or (clas == ["Path of the Zealot", "Barbarian"])
         if rand(2) == 1
             equiplist << "Greataxe"
         else
@@ -68,7 +68,7 @@ def equipment(clas, background)
         equiplist << ", Explorer's Pack"
         equiplist << ", 4 Javelins"
 
-    elsif (clas == "College of Glamour Bard") or (clas == "College of Lore Bard") or (clas == "College of Swords Bard") or (clas == "College of Valor Bard") or (clas == "College of Whispers Bard")
+    elsif (clas[1] == "Bard") #["College of Glamour", "Bard"]) or (clas == "College of Lore Bard") or (clas == "College of Swords Bard") or (clas == "College of Valor Bard") or (clas == "College of Whispers Bard")
         temp = rand(3)
         if temp == 2
             equiplist << "Rapier"
@@ -84,7 +84,7 @@ def equipment(clas, background)
         end
         equiplist << "Lute"
 
-    elsif (clas == "Forge Domain Cleric") or (clas == "Grave Domain Cleric") or (clas == "Knowledge Domain Cleric") or (clas == "Life Domain Cleric") or (clas == "Light Domain Cleric") or (clas == "Nature Domain Cleric") or (clas == "Tempest Domain Cleric") or (clas == "Trickery Domain Cleric") or (clas == "War Domain Cleric") or (clas == "GOD OF SOME MOTHA FUCKING DRAGONS!!! Cleric")
+    elsif (clas[1] == "Cleric") #"Forge Domain Cleric") or (clas == "Grave Domain Cleric") or (clas == "Knowledge Domain Cleric") or (clas == "Life Domain Cleric") or (clas == "Light Domain Cleric") or (clas == "Nature Domain Cleric") or (clas == "Tempest Domain Cleric") or (clas == "Trickery Domain Cleric") or (clas == "War Domain Cleric") or (clas == "GOD OF SOME MOTHA FUCKING DRAGONS!!! Cleric")
         if rand(2) == 1
             equiplist << "Mace"
         else
@@ -109,7 +109,8 @@ def equipment(clas, background)
             equiplist << "Explorer's Pack"
         end
         equiplist << "Shield, Holy Symbol"
-    elsif (clas == "Circle of Dreams Druid") or (clas == "Circle of the Land Druid") or (clas == "Circle of the Moon Druid") or (clas == "Circle of the Shepard Druid")
+
+    elsif (clas[1] == "Druid") #"Circle of Dreams Druid") or (clas == "Circle of the Land Druid") or (clas == "Circle of the Moon Druid") or (clas == "Circle of the Shepard Druid")
         if rand(2) == 1
             equiplist << "Wooden shield"
         else
@@ -122,7 +123,7 @@ def equipment(clas, background)
         end
         equiplist << "Leather armor, Explorer's Pack, Druidic focus"
 
-    elsif (clas == "Arcane Archer Fighter") or (clas == "Battle Master Fighter") or (clas == "Cavalier Fighter") or (clas == "Champion Fighter") or (clas == "Eldritch Knight Fighter") or (clas == "Samurai Fighter")
+    elsif (clas[1] == "Fighter") #"Arcane Archer Fighter") or (clas == "Battle Master Fighter") or (clas == "Cavalier Fighter") or (clas == "Champion Fighter") or (clas == "Eldritch Knight Fighter") or (clas == "Samurai Fighter")
         if rand(2) == 1
             equiplist << "Chain mail"
         else
@@ -146,7 +147,7 @@ def equipment(clas, background)
             equiplist << "Explorer's Pack"
         end
 
-    elsif (clas == "Way of the Drunken Master Monk") or (clas == "Way of the Four Elements Monk") or (clas == "Way of the Kensei Monk") or (clas == "Way of the Open Hand Monk") or (clas == "Way of the Sun Soul Monk")
+    elsif (clas[1] == "Monk") #"Way of the Drunken Master Monk") or (clas == "Way of the Four Elements Monk") or (clas == "Way of the Kensei Monk") or (clas == "Way of the Open Hand Monk") or (clas == "Way of the Sun Soul Monk")
         if rand(2) == 1
             equiplist << "Shortsword"
         else
@@ -158,7 +159,7 @@ def equipment(clas, background)
             equiplist << "Explorer's Pack"
         end
 
-    elsif (clas == "Order of the Avatar Mystic") or (clas == "Order of the Awakened Mystic") or (clas == "Order of the Immortal Mystic") or (clas == "Order of the Nomad Mystic") or (clas == "Order of the Soul Knife Mystic") or (clas == "Order of the Wu Jen Mystic")
+    elsif (clas[1] == "Mystic") #"Order of the Avatar Mystic") or (clas == "Order of the Awakened Mystic") or (clas == "Order of the Immortal Mystic") or (clas == "Order of the Nomad Mystic") or (clas == "Order of the Soul Knife Mystic") or (clas == "Order of the Wu Jen Mystic")
         if rand(2) == 1
             equiplist << "Spear"
         else
@@ -180,7 +181,7 @@ def equipment(clas, background)
             equiplist << "Explorer's Pack"
         end
 
-    elsif (clas == "Oath of the Ancients Paladin") or (clas == "Oath of Conquest Paladin") or (clas == "Oath of Devotation Paladin") or (clas == "Oath of Redemption Paladin") or (clas == "Oath of Vengeance Paladin")
+    elsif (clas[1] == "Paladin") #"Oath of the Ancients Paladin") or (clas == "Oath of Conquest Paladin") or (clas == "Oath of Devotation Paladin") or (clas == "Oath of Redemption Paladin") or (clas == "Oath of Vengeance Paladin")
         if rand(2) == 1
             equiplist << martial_weapons
             equiplist << "Shield"
@@ -201,7 +202,7 @@ def equipment(clas, background)
         equiplist << "Chain mail"
         equiplist << "Holy symbol"
 
-    elsif (clas == "Beast Master Ranger") or (clas == "Gloom Stalker Ranger") or (clas == "Horizon Walker Ranger") or (clas == "Hunter Ranger") or (clas == "Monster Slayer Ranger")
+    elsif (clas[1] == "Ranger") #"Beast Master Ranger") or (clas == "Gloom Stalker Ranger") or (clas == "Horizon Walker Ranger") or (clas == "Hunter Ranger") or (clas == "Monster Slayer Ranger")
         if rand(2) == 1
             equiplist << "Scale mail"
         else
@@ -220,7 +221,7 @@ def equipment(clas, background)
         end
         equiplist << "Longbow, 20 arrows"
 
-    elsif (clas == "Arcane Trickster Rogue") or (clas == "Assassin Rogue") or (clas == "Inquisitive Rogue") or (clas == "Mastermind Rogue") or (clas == "Scout Rogue") or (clas == "Swashbuckler Rogue") or (clas == "Thief Rogue")
+    elsif (clas[1] == "Rogue") #"Arcane Trickster Rogue") or (clas == "Assassin Rogue") or (clas == "Inquisitive Rogue") or (clas == "Mastermind Rogue") or (clas == "Scout Rogue") or (clas == "Swashbuckler Rogue") or (clas == "Thief Rogue")
         if rand(2) == 1
             equiplist << "Rapier"
         else
@@ -241,7 +242,7 @@ def equipment(clas, background)
         end
         equiplist << "Leather armor, 2 Daggers, Theives' tools"
 
-    elsif (clas == "Divine Soul Sorcerer") or (clas == "Draconic Ancestry Sorcerer") or (clas == "Shadow Magic Sorcerer") or (clas == "Storm Sorcery Sorcerer") or (clas == "Wild Magic Sorcerer")
+    elsif (clas[1] == "Sorcerer") #"Divine Soul Sorcerer") or (clas == "Draconic Ancestry Sorcerer") or (clas == "Shadow Magic Sorcerer") or (clas == "Storm Sorcery Sorcerer") or (clas == "Wild Magic Sorcerer")
         if rand(2) == 1
             equiplist << "Light Crossbow, 20 bolts"
         else
@@ -259,7 +260,7 @@ def equipment(clas, background)
         end
         equiplist << "2 Daggers"
 
-    elsif (clas == "The Archfey Warlock") or (clas == "The Celestial Warlock") or (clas == "The Fiend Warlock") or (clas == "The Great Old One Warlock") or (clas == "The Hexblade Warlock")
+    elsif (clas[1] == "Warlock") #"The Archfey Warlock") or (clas == "The Celestial Warlock") or (clas == "The Fiend Warlock") or (clas == "The Great Old One Warlock") or (clas == "The Hexblade Warlock")
         if rand(2) == 1
             equiplist << "Light Crossbow, 20 bolts"
         else
@@ -278,7 +279,7 @@ def equipment(clas, background)
         equiplist << "Leather armor, 2 Daggers"
         equiplist << simple_weapons
 
-    elsif (clas == "School of Abjuration Wizard") or (clas == "School of Conjuration Wizard") or (clas == "School of Divination Wizard") or (clas == "School of Enchantment Wizard") or (clas == "School of Evocation Wizard") or (clas == "School of Illusion Wizard") or (clas == "School of Necromancy Wizard") or (clas == "School of Transmutation Wizard") or (clas == "War Magic Wizard")
+    elsif (clas[1] == "Wizard") #"School of Abjuration Wizard") or (clas == "School of Conjuration Wizard") or (clas == "School of Divination Wizard") or (clas == "School of Enchantment Wizard") or (clas == "School of Evocation Wizard") or (clas == "School of Illusion Wizard") or (clas == "School of Necromancy Wizard") or (clas == "School of Transmutation Wizard") or (clas == "War Magic Wizard")
         if rand(2) == 1
             equiplist << "Quarterstaff"
         else

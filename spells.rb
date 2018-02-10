@@ -1,3 +1,5 @@
+require_relative "class.rb"
+
 bard_cantrips = ["Blade Ward", "Dancing Lights", "Friends", "Light", "Mage Hand", "Mending", "Message", "Minor Illusion", "Prestidigitation", "True Strike", "Vicious Mockery", 2]
 bard_spells = ["Animal Friendship", "Bane", "Charm Person", "Comprehend Languages", "Cure Wounds", "Detect Magic", "Disguise", "Dissonant Whispers", "Faerie Fire", "Feather Fall", "Healing Word", "Heroism", "Identify", "Illusory Script", "Longstrider", "Silent Image", "Sleep", "Speak With Animals", "Tasha's Hideous Laughter", "Thunderwave", "Unseen Servant", 4]
 cleric_cantrips = ["Guidance", "Light", "Mending", "Resistance", "Sacred Flame", "Spare the Dying", "Thaumaturgy", 3]
@@ -12,7 +14,7 @@ wizard_cantrips = ["Acid Splash", "Blade Ward", "Chill Touch", "Dancing Lights",
 wizard_spells = ["Alarm", "Burning Hands", "Charm Person", "Chromatic Orb", "Color Spray", "Comprehend Languages", "Detect Life", "Disguise Self", "Expeditious Retreat", "False Life", "Feather Fall", "Find Familiar", "Fog Cloud", "Grease", "Identify", "Illusory Script", "Jump", "Longstrider", "Mage Armor", "Magic Missile", "Protection from Evil and Good", "Ray of Sickness", "shield", "Silent Image", "Sleep", "Tasha's Hideous Laughter", "Tenser's Floating Disk", "Thunderwave", "Unseen Servant", "Witch Bolt", 5]
 
 
-$classnum = 2    #rand(14)
+#$classnum = 2    #rand(14)
 
 artificier = ["No spells lvl 1"]
 barbarian = ["No spells lvl 1"]
@@ -29,8 +31,8 @@ sorcerer = [sorcerer_cantrips, sorcerer_spells]
 warlock = [warlock_cantrips, warlock_spells]
 wizard = [wizard_cantrips, wizard_spells]
 
-classes = [artificier, barbarian, bard, cleric, druid, fighter, monk, mystic, paladin, ranger, rogue, sorcerer, warlock, wizard]
-clas = classes[$classnum]
+classlist = [artificier, barbarian, bard, cleric, druid, fighter, monk, mystic, paladin, ranger, rogue, sorcerer, warlock, wizard]
+clas = classlist[classes[2]] #$classnum]
 
 def spell_select(clas)
     spellbook_cantrips = []

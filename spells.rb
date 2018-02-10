@@ -65,4 +65,4 @@ def spell_select(clas)
 
 end
 
-spell_select(clas)
+#spell_select(clas)

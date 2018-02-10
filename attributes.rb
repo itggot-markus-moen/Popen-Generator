@@ -58,44 +58,104 @@ def attributes(racenum, subracenum)
 
     elsif $racenum == 16
         #Dragonborn
-        str = "Strength: " + (str + 2).to_s + " (+ 2)"
-        dex = "Dexterity: " + dex.to_s
-        con = "Constitution: " + con.to_s
-        int = "Intelligence: " + int.to_s
-        wis = "Wisdom: " + wis.to_s
-        cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
         if $subracenum == 0
             #Black Dragonborn
+            str = "Strength: " + (str + 2).to_s + " (+ 2)"
+            dex = "Dexterity: " + dex.to_s
+            con = "Constitution: " + con.to_s
+            int = "Intelligence: " + int.to_s
+            wis = "Wisdom: " + wis.to_s
+            cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
             extra = "Acid Breath"
         elsif $subracenum == 1
             #Blue Dragonborn
+            str = "Strength: " + (str + 2).to_s + " (+ 2)"
+            dex = "Dexterity: " + dex.to_s
+            con = "Constitution: " + con.to_s
+            int = "Intelligence: " + int.to_s
+            wis = "Wisdom: " + wis.to_s
+            cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
             extra = "Lightning Breath"
         elsif $subracenum == 2
             #Brass Dragonborn
+            str = "Strength: " + (str + 2).to_s + " (+ 2)"
+            dex = "Dexterity: " + dex.to_s
+            con = "Constitution: " + con.to_s
+            int = "Intelligence: " + int.to_s
+            wis = "Wisdom: " + wis.to_s
+            cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
             extra = "Fire Breath"
         elsif $subracenum == 3
             #Bronze Dragonborn
+            str = "Strength: " + (str + 2).to_s + " (+ 2)"
+            dex = "Dexterity: " + dex.to_s
+            con = "Constitution: " + con.to_s
+            int = "Intelligence: " + int.to_s
+            wis = "Wisdom: " + wis.to_s
+            cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
             extra = "Lightning Breath"
         elsif $subracenum == 4
             #Copper Dragonborn
+            str = "Strength: " + (str + 2).to_s + " (+ 2)"
+            dex = "Dexterity: " + dex.to_s
+            con = "Constitution: " + con.to_s
+            int = "Intelligence: " + int.to_s
+            wis = "Wisdom: " + wis.to_s
+            cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
             extra = "Acis Breath"
         elsif $subracenum == 5
             #Gold Dragonborn
+            str = "Strength: " + (str + 2).to_s + " (+ 2)"
+            dex = "Dexterity: " + dex.to_s
+            con = "Constitution: " + con.to_s
+            int = "Intelligence: " + int.to_s
+            wis = "Wisdom: " + wis.to_s
+            cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
             extra = "Fire Breath"
         elsif $subracenum == 6
             #Green Dragonborn
+            str = "Strength: " + (str + 2).to_s + " (+ 2)"
+            dex = "Dexterity: " + dex.to_s
+            con = "Constitution: " + con.to_s
+            int = "Intelligence: " + int.to_s
+            wis = "Wisdom: " + wis.to_s
+            cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
             extra = "Poison Breath"
         elsif $subracenum == 7
             #Red Dragonborn
+            str = "Strength: " + (str + 2).to_s + " (+ 2)"
+            dex = "Dexterity: " + dex.to_s
+            con = "Constitution: " + con.to_s
+            int = "Intelligence: " + int.to_s
+            wis = "Wisdom: " + wis.to_s
+            cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
             extra = "Fire Breath"
         elsif $subracenum == 8
             #Silver Dragonborn
+            str = "Strength: " + (str + 2).to_s + " (+ 2)"
+            dex = "Dexterity: " + dex.to_s
+            con = "Constitution: " + con.to_s
+            int = "Intelligence: " + int.to_s
+            wis = "Wisdom: " + wis.to_s
+            cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
             extra = "Cold Breath"
         elsif $subracenum == 9
             #White Dragonborn
+            str = "Strength: " + (str + 2).to_s + " (+ 2)"
+            dex = "Dexterity: " + dex.to_s
+            con = "Constitution: " + con.to_s
+            int = "Intelligence: " + int.to_s
+            wis = "Wisdom: " + wis.to_s
+            cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
             extra = "Cold Breath"
         elsif $subracenum == 10
             #A MOTHA FUCKING DRAGON!!!
+            str = "Strength: " + (32).to_s + " (+ 2)"
+            dex = "Dexterity: " + (10).to_s
+            con = "Constitution: " + (29).to_s
+            int = "Intelligence: " + (18).to_s
+            wis = "Wisdom: " + (15).to_s
+            cha = "Charisma: " + (24).to_s + " (+ 1)"
             extra = "RAINBOW!!! Breath"
         end
 
@@ -346,4 +406,4 @@ def attributes(racenum, subracenum)
     return str, dex, con, int, wis, cha, extra
 end
 
-#puts attributes($racenum, $subracenum)
+puts attributes($racenum, $subracenum)

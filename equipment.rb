@@ -1,5 +1,5 @@
-require_relative "class.rb"
-require_relative "background.rb"
+#require_relative "class.rb"
+#require_relative "background.rb"
 
 #SIMPLE WEAPONS
 def simple_meleeweapons()

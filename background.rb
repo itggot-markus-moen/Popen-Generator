@@ -1,4 +1,4 @@
-require_relative "class.rb"
+#require_relative "class.rb"
 
 def background()
     backlist = ["Acolyte", "Charlatan", "Criminal", "Entertainer", "Folk Hero", "Guild Artisan", "Hermit", "Noble", "Outlander", "Sage", "Sailor", "Soldier", "Urchin"]

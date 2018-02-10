@@ -1,4 +1,4 @@
-require_relative "race.rb"
+#require_relative "race.rb"
 
 def alignments(race)
     base = rand(9)+1

@@ -44,8 +44,10 @@ clas = claslist[$classnum]
         list = clas[0]
         while i > 0
             spell = (list)[rand(list.length - 1)]
-            spellbook_cantrips.insert(1, spell)
-            i -= 1
+            if spellbook_cantrips.include?(spell) != true
+                spellbook_cantrips.insert(1, spell)
+                i -= 1
+            end
         end
         
         spellbook_cantrips << "\n"
@@ -60,8 +62,10 @@ clas = claslist[$classnum]
         i = clas[-1][-1]
         while i > 0
             spell = (list)[rand(list.length - 1)]
+            if spellbook_spells.include?(spell) != true
             spellbook_spells.insert(1, spell)
             i -= 1
+            end
         end
 
         #puts "

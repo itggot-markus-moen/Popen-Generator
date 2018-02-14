@@ -14,8 +14,30 @@ def you_are()#alignment, attributes, background, class, equipment, race, sex, sp
     subclas = clasarr[0]
     classnum = clasarr[2]
     back = background()
-    #Påminnelse till Markus: fixa attributes
-    return alignments(race), sex(), race, subclas + " " + clas, back, attributes($racenum, $subracenum), equipment(clasarr, back), "\n", spell_select(classnum)
+    $character = alignments(race), sex(), race, subclas + " " + clas, back, "\n", attributes($racenum, $subracenum), equipment(clasarr, back), "\n", spell_select(classnum)
+    return $character
 end
 
 puts you_are
+
+puts "\nDo you want to save this character (yes or no)?"
+save_yn = gets.chomp      #save_yn står för "save: yes or no"
+
+def save(save_yn)
+
+    if save_yn == "yes"
+
+        if Dir.exists?("characters") != true
+            Dir.mkdir "characters"
+        end
+
+        Dir.chdir("characters")
+
+        puts "Name your new character"
+        name = gets.chomp
+        File.write("#{name}.txt", $character)
+    end
+
+end
+
+puts save(save_yn)

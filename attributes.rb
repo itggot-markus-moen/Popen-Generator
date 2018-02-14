@@ -66,7 +66,7 @@ def attributes(racenum, subracenum)
             int = "Intelligence: " + int.to_s
             wis = "Wisdom: " + wis.to_s
             cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
-            extra = "Acid Breath"
+            extra = "   Acid Breath"
         elsif $subracenum == 1
             #Blue Dragonborn
             str = "Strength: " + (str + 2).to_s + " (+ 2)"
@@ -75,7 +75,7 @@ def attributes(racenum, subracenum)
             int = "Intelligence: " + int.to_s
             wis = "Wisdom: " + wis.to_s
             cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
-            extra = "Lightning Breath"
+            extra = "   Lightning Breath"
         elsif $subracenum == 2
             #Brass Dragonborn
             str = "Strength: " + (str + 2).to_s + " (+ 2)"
@@ -84,7 +84,7 @@ def attributes(racenum, subracenum)
             int = "Intelligence: " + int.to_s
             wis = "Wisdom: " + wis.to_s
             cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
-            extra = "Fire Breath"
+            extra = "   Fire Breath"
         elsif $subracenum == 3
             #Bronze Dragonborn
             str = "Strength: " + (str + 2).to_s + " (+ 2)"
@@ -93,7 +93,7 @@ def attributes(racenum, subracenum)
             int = "Intelligence: " + int.to_s
             wis = "Wisdom: " + wis.to_s
             cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
-            extra = "Lightning Breath"
+            extra = "   Lightning Breath"
         elsif $subracenum == 4
             #Copper Dragonborn
             str = "Strength: " + (str + 2).to_s + " (+ 2)"
@@ -102,7 +102,7 @@ def attributes(racenum, subracenum)
             int = "Intelligence: " + int.to_s
             wis = "Wisdom: " + wis.to_s
             cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
-            extra = "Acis Breath"
+            extra = "   Acid Breath"
         elsif $subracenum == 5
             #Gold Dragonborn
             str = "Strength: " + (str + 2).to_s + " (+ 2)"
@@ -111,7 +111,7 @@ def attributes(racenum, subracenum)
             int = "Intelligence: " + int.to_s
             wis = "Wisdom: " + wis.to_s
             cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
-            extra = "Fire Breath"
+            extra = "   Fire Breath"
         elsif $subracenum == 6
             #Green Dragonborn
             str = "Strength: " + (str + 2).to_s + " (+ 2)"
@@ -120,7 +120,7 @@ def attributes(racenum, subracenum)
             int = "Intelligence: " + int.to_s
             wis = "Wisdom: " + wis.to_s
             cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
-            extra = "Poison Breath"
+            extra = "   Poison Breath"
         elsif $subracenum == 7
             #Red Dragonborn
             str = "Strength: " + (str + 2).to_s + " (+ 2)"
@@ -129,7 +129,7 @@ def attributes(racenum, subracenum)
             int = "Intelligence: " + int.to_s
             wis = "Wisdom: " + wis.to_s
             cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
-            extra = "Fire Breath"
+            extra = "   Fire Breath"
         elsif $subracenum == 8
             #Silver Dragonborn
             str = "Strength: " + (str + 2).to_s + " (+ 2)"
@@ -138,7 +138,7 @@ def attributes(racenum, subracenum)
             int = "Intelligence: " + int.to_s
             wis = "Wisdom: " + wis.to_s
             cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
-            extra = "Cold Breath"
+            extra = "   Cold Breath"
         elsif $subracenum == 9
             #White Dragonborn
             str = "Strength: " + (str + 2).to_s + " (+ 2)"
@@ -147,7 +147,7 @@ def attributes(racenum, subracenum)
             int = "Intelligence: " + int.to_s
             wis = "Wisdom: " + wis.to_s
             cha = "Charisma: " + (cha + 1).to_s + " (+ 1)"
-            extra = "Cold Breath"
+            extra = "   Cold Breath"
         elsif $subracenum == 10
             #A MOTHA FUCKING DRAGON!!!
             str = "Strength: " + (32).to_s + " (+ 2)"
@@ -156,7 +156,7 @@ def attributes(racenum, subracenum)
             int = "Intelligence: " + (18).to_s
             wis = "Wisdom: " + (15).to_s
             cha = "Charisma: " + (24).to_s + " (+ 1)"
-            extra = "RAINBOW!!! Breath"
+            extra = "   RAINBOW!!! Breath"
         end
 
     elsif $racenum == 17

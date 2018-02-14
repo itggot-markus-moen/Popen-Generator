@@ -39,7 +39,7 @@ clas = claslist[$classnum]
 #def spell_select(clas)
 
     if clas.length == 2
-        spellbook_cantrips = ["Your cantrips are:"]
+        spellbook_cantrips = ["YOUR CANTRIPS ARE:"]#"Your cantrips are:"]
         i = clas[0][-1]
         list = clas[0]
         while i > 0
@@ -50,14 +50,14 @@ clas = claslist[$classnum]
             end
         end
         
-        spellbook_cantrips << "\n"
+        #spellbook_cantrips << "\n"
         #puts "
         #Your cantrips are:"
         #puts spellbook_cantrips
     end
 
     if clas.length == 2
-        spellbook_spells = ["Your spells are:"]
+        spellbook_spells = ["YOUR SPELLS ARE:"]#"Your spells are:"]
         list = clas[1]
         i = clas[-1][-1]
         while i > 0

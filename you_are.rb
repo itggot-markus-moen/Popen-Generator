@@ -12,9 +12,10 @@ def you_are()#alignment, attributes, background, class, equipment, race, sex, sp
     clasarr = classes()
     clas = clasarr[1]
     subclas = clasarr[0]
+    classnum = clasarr[2]
     back = background()
     #Påminnelse till Markus: fixa attributes
-    return alignments(race), sex(), race, subclas + " " + clas, back, attributes(21, 0), equipment(clasarr, back)#, spell_select(clas)
+    return alignments(race), sex(), race, subclas + " " + clas, back, attributes($racenum, $subracenum), equipment(clasarr, back), "\n", spell_select(classnum)
 end
 
 puts you_are

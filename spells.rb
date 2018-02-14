@@ -1,4 +1,6 @@
-require_relative "class.rb"
+#require_relative "class.rb"
+
+def spell_select(clas)
 
 bard_cantrips = ["Blade Ward", "Dancing Lights", "Friends", "Light", "Mage Hand", "Mending", "Message", "Minor Illusion", "Prestidigitation", "True Strike", "Vicious Mockery", 2]
 bard_spells = ["Animal Friendship", "Bane", "Charm Person", "Comprehend Languages", "Cure Wounds", "Detect Magic", "Disguise", "Dissonant Whispers", "Faerie Fire", "Feather Fall", "Healing Word", "Heroism", "Identify", "Illusory Script", "Longstrider", "Silent Image", "Sleep", "Speak With Animals", "Tasha's Hideous Laughter", "Thunderwave", "Unseen Servant", 4]
@@ -31,40 +33,45 @@ sorcerer = [sorcerer_cantrips, sorcerer_spells]
 warlock = [warlock_cantrips, warlock_spells]
 wizard = [wizard_cantrips, wizard_spells]
 
-classlist = [artificier, barbarian, bard, cleric, druid, fighter, monk, mystic, paladin, ranger, rogue, sorcerer, warlock, wizard]
-clas = classlist[classes[2]] #$classnum]
+claslist = [artificier, barbarian, bard, cleric, druid, fighter, monk, mystic, paladin, ranger, rogue, sorcerer, warlock, wizard]
+clas = claslist[$classnum]
 
-def spell_select(clas)
-    spellbook_cantrips = []
-    spellbook_spells = []
-    i = clas[0][-1]
-    list = clas[0]
-    while i > 0
-        spell = (list)[rand(list.length - 1)]
-        spellbook_cantrips.insert(1, spell)
-        i -= 1
+#def spell_select(clas)
+
+    if clas.length == 2
+        spellbook_cantrips = ["Your cantrips are:"]
+        i = clas[0][-1]
+        list = clas[0]
+        while i > 0
+            spell = (list)[rand(list.length - 1)]
+            spellbook_cantrips.insert(1, spell)
+            i -= 1
+        end
+        
+        spellbook_cantrips << "\n"
+        #puts "
+        #Your cantrips are:"
+        #puts spellbook_cantrips
     end
 
-    puts "
-    Your cantrips are:" 
-    puts spellbook_cantrips
+    if clas.length == 2
+        spellbook_spells = ["Your spells are:"]
+        list = clas[1]
+        i = clas[-1][-1]
+        while i > 0
+            spell = (list)[rand(list.length - 1)]
+            spellbook_spells.insert(1, spell)
+            i -= 1
+        end
 
-    list = clas[1]
-    i = clas[-1][-1]
-    while i > 0
-        spell = (list)[rand(list.length - 1)]
-        spellbook_spells.insert(1, spell)
-        i -= 1
+        #puts "
+        #Your spells are:"
+        #puts spellbook_spells
     end
-
-    
-    puts "
-    Your spells are:" 
-    puts spellbook_spells
 
 
     return spellbook_cantrips, spellbook_spells
 
 end
 
-#spell_select(clas)
+#puts spell_select(clas)

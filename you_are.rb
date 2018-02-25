@@ -14,7 +14,11 @@ def you_are()#alignment, attributes, background, class, equipment, race, sex, sp
     subclas = clasarr[0]
     classnum = clasarr[2]
     back = background()
-    $character = alignments(race), sex(), race, subclas + " " + clas, back, "\n", attributes($racenum, $subracenum), equipment(clasarr, back), "\n", spell_select(classnum)
+    if subclas != "GOD OF SOME MOTHA FUCKING DRAGONS!!!"
+        subclasclas = subclas + " " + clas
+    else subclasclas = subclas
+    end
+    $character = alignments(race), sex(), race, subclasclas, back, "\n", attributes($racenum, $subracenum), equipment(clasarr, back), "\n", spell_select(classnum)
     return $character
 end
 

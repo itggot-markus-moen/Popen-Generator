@@ -21,9 +21,9 @@ def classes()
     $subclassnum = rand((classlist[$classnum]).length - 1) + 1
     subclas = (classlist[$classnum])[$subclassnum]
 
-    if subclas == (classlist[3])[10]
-        return subclas
-    end
+    #if subclas == (classlist[3])[10]
+    #    return [subclas, $classunm, $subclassnum]
+    #end
 
     return [subclas, clas, $classnum, $subclassnum] #subclas + " " + clas
 end

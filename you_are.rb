@@ -18,7 +18,9 @@ def you_are()#alignment, attributes, background, class, equipment, race, sex, sp
         subclasclas = subclas + " " + clas
     else subclasclas = subclas
     end
-    $character = alignments(race), sex(), race, subclasclas, back, "\n", attributes($racenum, $subracenum), equipment(clasarr, back), "\n", spell_select(classnum)
+    #$character = alignments(race), sex(), race, subclasclas, back, "\n", attributes($racenum, $subracenum), equipment(clasarr, back), "\n", spell_select(classnum)
+    $character = "\n" + alignments(race) + "\n" + sex() + "\n" + race + "\n"  + subclas + " " + clas +
+    "\n" + back + "\n" + "\n" + attributes($racenum, $subracenum).to_s + "\n" + equipment(clasarr, back).to_s + "\n" "\n" + spell_select(classnum).to_s
     return $character
 end
 

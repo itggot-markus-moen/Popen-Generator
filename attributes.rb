@@ -402,8 +402,9 @@ def attributes(racenum, subracenum)
         wis = "Wisdom: " + wis.to_s
         cha = "Charisma: " + (cha + 2).to_s + " (+ 2)"
     end
-
-    return str, dex, con, int, wis, cha, extra
+    stats = str, dex, con, int, wis, cha, extra
+    stats = stats.join(" ")
+    return stats
 end
 
 #puts attributes($racenum, $subracenum)

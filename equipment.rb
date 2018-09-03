@@ -32,7 +32,7 @@ end
 
 def equipment(clas, background)
     equiplist = []
-    equiplist << "CLASS EQUIPMENT:"
+    backeq = []
     if (clas[1] == "Artificer") #["Alchemist", "Artificer"]) or (clas == ["Gunsmith", "Artificer"]) #Class specific equipment
         if rand(2) == 1
             equiplist << "Handaxe"
@@ -299,91 +299,91 @@ def equipment(clas, background)
     else
         return "Something's wrong with the classes"
     end
-    equiplist << "BACKGROUND EQUIPMENT:"
     if background == "Acolyte" #Background specific equipment
-        equiplist << "Holy symbol"
+        backeq << "Holy symbol"
         if rand(2) == 1
-            equiplist << "Prayer book"
+            backeq << "Prayer book"
         else
-            equiplist << "Prayer wheel"
+            backeq << "Prayer wheel"
         end
-        equiplist << "5 sticks of incense, Vestments, Common clothes, Belt pouch containing 15 gp"
+        backeq << "5 sticks of incense, Vestments, Common clothes, Belt pouch containing 15 gp"
 
     elsif background == "Charlatan"
-        equiplist << "Fine clothes, Disguise kit"
+        backeq << "Fine clothes, Disguise kit"
         temp = rand(4)
         if temp == 3
-            equiplist << "10 stoppered bottles filled with colored liquid"
+            backeq << "10 stoppered bottles filled with colored liquid"
         elsif temp == 2
-            equiplist << "Set of weighted dice"
+            backeq << "Set of weighted dice"
         elsif temp == 1
-            equiplist << "Deck of marked cards"
+            backeq << "Deck of marked cards"
         else
-            equiplist << "Ring of an imaginary duke"
+            backeq << "Ring of an imaginary duke"
         end
-        equiplist << "Belt pouch containing 15 gp"
+        backeq << "Belt pouch containing 15 gp"
         
     elsif background == "Criminal"
-        equiplist << "Crowbar, Set of dark clothes including a hood, Belt pouch containing 15 gp"
+        backeq << "Crowbar, Set of dark clothes including a hood, Belt pouch containing 15 gp"
 
     elsif background == "Entertainer"
-        equiplist << "Musical instrument"
+        backeq << "Musical instrument"
         temp = rand(3)
         if temp == 2
-            equiplist << "Love letter from admirer"
+            backeq << "Love letter from admirer"
         elsif temp == 1
-            equiplist << "Lock of admirer's hair"
+            backeq << "Lock of admirer's hair"
         else
-            equiplist << "Admirer's trinket"
+            backeq << "Admirer's trinket"
         end
-        equiplist << "Costume, Belt pouch containing 15 gp"
+        backeq << "Costume, Belt pouch containing 15 gp"
 
     elsif background == "Folk Hero"
-        equiplist << "Set of artisan's tools, Shovel, Iron pot, Common clothes, Belt pouch containing 10 gp"
+        backeq << "Set of artisan's tools, Shovel, Iron pot, Common clothes, Belt pouch containing 10 gp"
 
     elsif background == "Guild Artisan"
-        equiplist << "Set of artisan's tools, Guild introduction letter, Traveler's clothes, Belt pouch containing 15 gp"
+        backeq << "Set of artisan's tools, Guild introduction letter, Traveler's clothes, Belt pouch containing 15 gp"
 
     elsif background == "Hermit"
-        equiplist << "Scroll case stuffed with notes of studies and prayer, Winter blanket, Common clothes, Herbalism kit, 5 gp"
+        backeq << "Scroll case stuffed with notes of studies and prayer, Winter blanket, Common clothes, Herbalism kit, 5 gp"
 
     elsif background == "Noble"
-        equiplist << "Fine clothes, Signet ring, Scroll of pedigree, Purse containing 25 gp"
+        backeq << "Fine clothes, Signet ring, Scroll of pedigree, Purse containing 25 gp"
 
     elsif background == "Outlander"
-        equiplist << "Staff, Hunting trap, Hunting trophy, Traveler's clothes, Belt pouch containing 10 gp"
+        backeq << "Staff, Hunting trap, Hunting trophy, Traveler's clothes, Belt pouch containing 10 gp"
 
     elsif background == "Sage"
-        equiplist << "Bottle of black ink, Quill, Small knife, Letter from dead colleague posing answers that are unanswered, Common clothes, Belt pouch containing 10 gp"
+        backeq << "Bottle of black ink, Quill, Small knife, Letter from dead colleague posing answers that are unanswered, Common clothes, Belt pouch containing 10 gp"
 
     elsif background == "Sailor"
-        equiplist << "Belaying pin(club), 50 feet of silk rope, Lucky charm, Common clothes, Belt pouch containing 10 gp"
+        backeq << "Belaying pin(club), 50 feet of silk rope, Lucky charm, Common clothes, Belt pouch containing 10 gp"
 
     elsif background == "Soldier"
-        equiplist << "Insignia of rank"
+        backeq << "Insignia of rank"
         temp = rand(3)
         if temp == 2
-            equiplist << "Dagger of a fallen enemy"
+            backeq << "Dagger of a fallen enemy"
         elsif temp == 1
-            equiplist << "Banner of a fallen enemy"
+            backeq << "Banner of a fallen enemy"
         else
-            equiplist << "Broken blade of a fallen enemy"
+            backeq << "Broken blade of a fallen enemy"
         end
         if rand(2) == 1
-            equiplist << "Bone dice"
+            backeq << "Bone dice"
         else
-            equiplist << "Deck of cards"
+            backeq << "Deck of cards"
         end
-        equiplist << "Common clothes, Belt pouch containing 10 gp"
+        backeq << "Common clothes, Belt pouch containing 10 gp"
 
     elsif background == "Urchin"
-        equiplist << "Small knife, Map of home town, Pet mouse, Token of parents, Common clothes, Belt pouch containing 10 gp"
+        backeq << "Small knife, Map of home town, Pet mouse, Token of parents, Common clothes, Belt pouch containing 10 gp"
 
     else
         return "Something's wrong with the backgrounds"
     end
-
-    return equiplist
+    equiplist = equiplist.join(", ")
+    backeq = backeq.join(", ")
+    return "CLASS EQUIPMENT: #{equiplist} \nBACKGROUND EQUIPMENT: #{backeq}"
 end
 
 #myclass = classes()

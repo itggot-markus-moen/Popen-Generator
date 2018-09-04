@@ -8,5 +8,3 @@ def sex()
     
     return sex
 end
-
-#puts sex

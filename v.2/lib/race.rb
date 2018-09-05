@@ -16,10 +16,10 @@ def race()
     [["Bugbear", :str, 2, :dex, 1], ["Hobgoblin", :con, 2, :int, 1], ["Goblin", :dex, 2, :con, 1], ["Kobold", :dex, 2, :str, -2], ["Orc", :str, 2, :con, 1, :int, -2], 
     ["Yuan-Ti", :cha, 2, :int, 1]]]
 
-        char_race = racelist[8]#rand(racelist.length - 1) + 1]
+        char_race = racelist[rand(racelist.length)]
 
         while char_race[0] != char_race[0].to_s
-            char_race = char_race[rand(char_race.length - 1) + 1]
+            char_race = char_race[rand(char_race.length)]
         end
     
         i = 1

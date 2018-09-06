@@ -1,5 +1,3 @@
-@abilities = {str:0, dex:0, con:0, int:0, wis:0, cha:0}
-
 def clas()
     classlist = [[[:int, :con, :dex, :wis, :cha, :str], "Artificer", "Alchemist", "Gunsmith", "Mechanist"], 
     [[:str, :con, :dex, :wis, :cha, :int], "Barbarian", "Path of the Ancestral Guardian", "Path of the Berserker", "Path of the Storm Herald", "Path of the Totem Warrior", "Path of the Zealot"], 

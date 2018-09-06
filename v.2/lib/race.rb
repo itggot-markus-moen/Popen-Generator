@@ -1,4 +1,4 @@
-@abilities = {str:0, dex:0, con:0, int:0, wis:0, cha:0}
+@attributes = {str:0, dex:0, con:0, int:0, wis:0, cha:0}
 
 def race()
     racelist = [[["Protector Aasimar", :cha, 2, :wis, 1], ["Scourge Aasimar", :cha, 2, :con, 1], ["Fallen Aasimar", :cha, 2, :str, 1]], [["Black Dragonborn", :str, 2, :cha, 1], 
@@ -26,11 +26,11 @@ def race()
         @race = char_race[0]
         while i < char_race.length
             stat = char_race[i]
-            @abilities[stat] += char_race[i + 1]
+            @attributes[stat] += char_race[i + 1]
             i += 2
         end
 
-    return @race, @abilities
+    return @race
 end
 
 puts race()

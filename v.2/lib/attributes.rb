@@ -25,9 +25,15 @@ def attributes()
     i = 0
     while i < 6
         statarr << dice()
+        statarr = sort(statarr)
         i += 1
+        if i == 6
+            if statarr[0] < 16 || statarr[1] < 16
+                i = 0
+                statarr = []
+            end
+        end
     end
-    statarr = sort(statarr)
 
     priorities.each_with_index do |element, index|
         @attributes[element] += statarr[index]

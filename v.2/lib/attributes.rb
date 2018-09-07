@@ -28,7 +28,7 @@ def attributes()
         statarr = sort(statarr)
         i += 1
         if i == 6
-            if statarr[0] < 16 || statarr[1] < 16
+            if statarr[0] < 15 || statarr[1] < 15
                 i = 0
                 statarr = []
             end

@@ -1,4 +1,4 @@
-require_relative "attributes.rb"
+require_relative "abilities.rb"
 require_relative "background.rb"
 require_relative "class.rb"
 require_relative "gender.rb"

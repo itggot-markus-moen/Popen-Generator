@@ -1,5 +1,5 @@
 def equipment(key)
-    backdict = {"Acolyte" => "A holy symbol (a gift to you when you entered the priesthood), a prayer book or prayer wheel, 5 sticks of incense, vestments, a set of common clothes, and a belt pouch containing 15 gp", 
+    backdict = {"Acolyte" => ["A holy symbol", "a prayer book or prayer wheel", "5 sticks of incense", "vestments", "a set of common clothes", "and a belt pouch containing 15 gp"], 
     "Charlatan" => "A set of fine c1othes, a disguise kit, tools of the con of your choice (ten stoppered bottles filled with colored liquid, a set of weighted dice, a deck of marked cards, or a signet ring of an imaginary duke), and a belt pouch containing 15 gp", 
     "City Watch" => "A uniform in the style of your unit and indicative of your rank, a horn with which to summon help, a set of manacles, and a pouch containing 10 gp", 
     "Clan Crafter" => "A set of artisan's tools with which you are proficient, a maker's mark chisel used to mark your handiwork with the symbol of the clan of crafters you learned your skill from, a set of traveler's clothes, and a pouch containing 5 gp and a gem worth 10 gp", 

@@ -36,9 +36,9 @@ def attributes()
     end
 
     priorities.each_with_index do |element, index|
-        @attributes[element] += statarr[index]
+        @abilities[element] += statarr[index]
     end
-    return @attributes
+    return @abilities
 end
 
 p attributes()
